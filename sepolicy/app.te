@@ -1,0 +1,2 @@
+# Allow AAudio apps to use shared memory file descriptors from the HAL
+allow { appdomain -isolated_app } hal_audio:fd use;

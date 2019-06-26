@@ -1,0 +1,26 @@
+type fpc_data_file, file_type, data_file_type;
+type fpce_socket, file_type;
+type fpc_sysfs, fs_type, sysfs_type;
+type gx_fpd_data_file, file_type, data_file_type;
+
+type proc_touchscreen, fs_type;
+
+type debugfs_wlan, debugfs_type, fs_type;
+
+type sysfs_wifi, sysfs_type, fs_type;
+#type sysfs_wifi, sysfs_type, fs_type, mlstrustedobject;
+
+# Rild
+type rild_file, file_type, vendor_file_type;
+
+# Rmt
+type debugfs_rmt, debugfs_type, fs_type;
+
+# /data/vendor/tombstones/wifi - vendor wifi dumps
+type tombstone_wifi_data_file, file_type, data_file_type;
+
+# Nfc
+type nfc_vendor_data_file, file_type, data_file_type;
+
+# Livedisplay
+type sysfs_livedisplay, sysfs_type, fs_type;

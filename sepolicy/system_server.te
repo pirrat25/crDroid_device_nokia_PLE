@@ -1,0 +1,15 @@
+allow system_server radio_prop:property_service set;
+
+allow system_server persist_file:dir { read write };
+allow system_server proc_touchscreen:dir search;
+allow system_server proc_touchscreen:file rw_file_perms;
+
+hal_client_domain(system_server, hal_wifi)
+# hal_client_domain(system_server, hal_wifi_hostapd)
+hal_client_domain(system_server, hal_wifi_offload)
+hal_client_domain(system_server, hal_wifi_supplicant)
+
+allow system_server hal_audio:process { getsched setsched };
+
+# Use HALs
+hal_client_domain(system_server, hal_light)

@@ -1,0 +1,5 @@
+# Signal native processes to dump their stack.
+allow dumpstate {
+  # This list comes from hal_interfaces_to_dump in dumpstate/utils.c
+  hal_audio_server
+}:process signal;

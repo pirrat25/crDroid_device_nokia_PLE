@@ -1,0 +1,10 @@
+# Rmt
+genfscon debugfs /rmt_storage	u:object_r:debugfs_rmt:s0
+
+genfscon debugfs /wlan0   u:object_r:debugfs_wlan:s0
+
+genfscon sysfs /devices/soc/600000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net/wlan0 u:object_r:sysfs_wifi:s0
+
+genfscon proc /gloved_finger_switch    u:object_r:proc_touchscreen:s0
+genfscon proc /touchscreen             u:object_r:proc_touchscreen:s0
+
